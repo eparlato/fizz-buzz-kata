@@ -58,4 +58,15 @@ describe('When I run the game', function() {
         expect(linesToPrint[2]).toEqual(11);
         expect(linesToPrint[3]).toEqual('Fizz');
     });
+
+    it('If a number is multiple of five, the output is "Buzz"', function() {
+        
+        numbers = [10, 20, 40];
+
+        linesToPrint = fizzBuzz.run(numbers);
+
+        expect(linesToPrint[0]).toEqual('Buzz');
+        expect(linesToPrint[1]).toEqual('Buzz');
+        expect(linesToPrint[2]).toEqual('Buzz');
+    });
 });
