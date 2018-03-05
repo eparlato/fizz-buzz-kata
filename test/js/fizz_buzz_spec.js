@@ -60,7 +60,6 @@ describe('When I run the game', function() {
     });
 
     it('If a number is multiple of five, the output is "Buzz"', function() {
-        
         numbers = [10, 20, 40];
 
         linesToPrint = fizzBuzz.run(numbers);
@@ -68,5 +67,15 @@ describe('When I run the game', function() {
         expect(linesToPrint[0]).toEqual('Buzz');
         expect(linesToPrint[1]).toEqual('Buzz');
         expect(linesToPrint[2]).toEqual('Buzz');
+    });
+
+    it('If a number is multiple both of three and five, the output is "FizzBuzz"', function() {
+        numbers = [15, 30, 45];
+
+        linesToPrint = fizzBuzz.run(numbers);
+
+        expect(linesToPrint[0]).toEqual('FizzBuzz');
+        expect(linesToPrint[1]).toEqual('FizzBuzz');
+        expect(linesToPrint[2]).toEqual('FizzBuzz');
     });
 });

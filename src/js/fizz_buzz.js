@@ -4,7 +4,9 @@ function FizzBuzz() {
         var linesToPrint = [];
 
         numbers.forEach(function (number) {
-            if (number % 3 === 0) {
+            if( (number % 3 === 0) && (number % 5 === 0)) {
+                linesToPrint.push('FizzBuzz');
+            } else if (number % 3 === 0) {
                 linesToPrint.push('Fizz');
             } else if(number % 5 === 0) {
                 linesToPrint.push('Buzz');
