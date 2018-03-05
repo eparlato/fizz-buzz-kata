@@ -23,4 +23,14 @@ describe('When I run the game', function() {
         expect(linesToPrint[3]).toEqual(5);
         expect(linesToPrint[4]).toEqual(7);
     });
+
+    it('If a number is three, in that position I have a "Fizz" string', function() {
+        numbers = [1, 2, 3];
+
+        linesToPrint = fizzBuzz.run(numbers);
+
+        expect(linesToPrint[0]).toEqual(1);
+        expect(linesToPrint[1]).toEqual(2);
+        expect(linesToPrint[2]).toEqual('Fizz');
+    });
 });
