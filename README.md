@@ -1,5 +1,7 @@
 # Fizz Buzz Kata
 
+## Kata instructions
+
 * Write a program that prints one line for each number from 1 to 100
 
 * For multiples of three print Fizz instead of the number
@@ -8,4 +10,10 @@
 
 * For numbers which are multiples of both three and five print FizzBuzz instead of the 
 
-Pomodoro used: XXX
+## How to run the tests
+
+Go to \test\js\jasmine and open SpecRunner.html
+
+## How to run the application
+
+Open main.html and see the output on the js console.
